@@ -1,0 +1,51 @@
+#main-intro {
+  @include flex(flex-start, center, row);
+  flex-wrap: wrap;
+  margin-bottom: 7.5rem;
+}
+
+.proof-intro {
+  flex-grow: 2;
+  h2 {
+    line-height: 1;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+}
+
+.proof-ratings {
+  @include flex(flex-start, center, column);
+  flex-grow: 1;
+  margin-top: 0;
+}
+.ratings {
+  @include flex(center, center, row);
+  margin: 1rem;
+  background: hsl(300, 24%, 96%);
+  padding: 0.75rem 5rem 0.75rem 3rem;
+  border-radius: 10px;
+  p {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    margin: 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+.star-ratings {
+  margin-right: 2rem;
+}
+.star-ratings img {
+  padding: 0.25rem;
+}
+
+.reviews-rating {
+  align-self: flex-start;
+}
+
+.besttech-rating {
+  align-self: flex-end;
+}

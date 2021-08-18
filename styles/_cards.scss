@@ -1,0 +1,53 @@
+#testimonials {
+  @include flex(space-between, center, row);
+
+  .testimonial-card {
+    background: hsl(300, 43%, 22%);
+    padding: 3rem;
+    width: 30vw;
+    height: 32.5vh;
+    border-radius: 10px;
+    margin: 1.5rem;
+  }
+}
+
+.customer-info {
+  @include flex(flex-start, center, row);
+  margin-top: 1rem;
+  br {
+    line-height: 2.5rem;
+  }
+  span {
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+}
+
+.customer-img {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  margin-right: 2rem;
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.customer-testimonial p {
+  margin: 2rem 0rem 1rem 0rem;
+  line-height: 2.5rem;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.testimonial-card#anne-card {
+  margin-bottom: -15px;
+}
+
+.testimonial-card#colton-card {
+  margin-top: -15px;
+}
